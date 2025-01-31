@@ -1,0 +1,119 @@
+/* Chatbot Container */
+.chatbot-container {
+    width: 350px;
+    height: 500px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 20px auto;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Chatbot Header */
+  .chatbot-header {
+    background-color: #6c5ce7; /* Purple color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  /* Chatbot Messages */
+  .chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f5f6fa; /* Light gray background */
+  }
+  
+  /* Message Styling */
+  .message {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .message.user {
+    justify-content: flex-end;
+  }
+  
+  .message.bot {
+    justify-content: flex-start;
+  }
+  
+  .message-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #6c5ce7; /* Purple color */
+    color: white;
+  }
+  
+  .message.user .message-icon {
+    background-color: #00b894; /* Green color */
+  }
+  
+  .message-text {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .message.user .message-text {
+    background-color: #00b894; /* Green color */
+    color: white;
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  .message.bot .message-text {
+    background-color: #ffffff; /* White color */
+    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px 10px 10px 0;
+  }
+  
+  /* Chatbot Input */
+  .chatbot-input {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  
+  .chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .chatbot-input button {
+    background-color: #6c5ce7; /* Purple color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chatbot-input button:hover {
+    background-color: #5a4dcc; /* Darker purple */
+  }
